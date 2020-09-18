@@ -1,16 +1,17 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/permission
+    url: jdbc:mysql://10.2.37.5:33061/permission?serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
     username: root
-    password: 123456
+    password: SimsysCe_2019
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
   session:
     store-type: redis
   redis:
-    host: 127.0.0.1
-    password: 123456
+    host: 10.2.37.4
     port: 6379
+    timeout: 5000ms
+    password: ookuai8K82Sy
 server:
   port: 8080
